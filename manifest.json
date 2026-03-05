@@ -1,0 +1,21 @@
+{
+  "name": "DENTI — a song-game by TYTO",
+  "short_name": "DENTI",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "index.apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "index.icon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
