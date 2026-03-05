@@ -233,6 +233,9 @@ const engine = new Engine(GODOT_CONFIG);
   font-size: 18px;
   cursor: pointer;
 }
+@supports (-webkit-touch-callout: none) {
+  #fullscreen-btn { display: none; }
+}
 </style>
 <button id="fullscreen-btn" onclick="
   var c = document.getElementById('canvas');
