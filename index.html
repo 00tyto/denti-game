@@ -110,42 +110,42 @@ body {
 			<div id="status-notice"></div>
 		</div>
 
-		<!-- FULLSCREEN BUTTON --><!-- FULLSCREEN BUTTON — non toccare, aggiunto manualmente -->
+		<!-- FULLSCREEN BUTTON — non toccare, aggiunto manualmente -->
 		<button id="fsBtn" style="
-		position: fixed;
-		bottom: 12px;
-		right: 12px;
-		background: rgba(255,255,255,0.18);
-		border: none;
-		color: white;
-		font-size: 20px;
-		width: 38px;
-		height: 38px;
-		border-radius: 6px;
-		cursor: pointer;
-		z-index: 9999;
-		display: none;
-		line-height: 1;
-	">⛶</button>
-	<script>
-		(function() {
-			// Nascondi su iOS — Fullscreen API non supportata
-			var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-			var btn = document.getElementById('fsBtn');
-			if (!isIOS) btn.style.display = 'block';
-			btn.addEventListener('click', function() {
-				if (document.fullscreenElement) {
-					document.exitFullscreen();
-				} else {
-					document.documentElement.requestFullscreen();
-				}
-			});
-			document.addEventListener('fullscreenchange', function() {
-				btn.textContent = document.fullscreenElement ? '✕' : '⛶';
-			});
-		})();
-	</script>
-	<!-- FINE FULLSCREEN BUTTON -->
+			position: fixed;
+			bottom: 12px;
+			right: 12px;
+			background: rgba(255,255,255,0.18);
+			border: none;
+			color: white;
+			font-size: 20px;
+			width: 38px;
+			height: 38px;
+			border-radius: 6px;
+			cursor: pointer;
+			z-index: 9999;
+			display: none;
+			line-height: 1;
+		">⛶</button>
+		<script>
+			(function() {
+				// Nascondi su iOS — Fullscreen API non supportata
+				var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+				var btn = document.getElementById('fsBtn');
+				if (!isIOS) btn.style.display = 'block';
+				btn.addEventListener('click', function() {
+					if (document.fullscreenElement) {
+						document.exitFullscreen();
+					} else {
+						document.documentElement.requestFullscreen();
+					}
+				});
+				document.addEventListener('fullscreenchange', function() {
+					btn.textContent = document.fullscreenElement ? '✕' : '⛶';
+				});
+			})();
+		</script>
+		<!-- FINE FULLSCREEN BUTTON -->
 
 		<script src="index.js"></script>
 		<script>
