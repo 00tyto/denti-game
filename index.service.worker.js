@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1775059167|939047252';
+const CACHE_VERSION = '1775061432|1484114455';
 /** @type {string} */
 const CACHE_PREFIX = 'DENTI_GAME 2 OK!-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
