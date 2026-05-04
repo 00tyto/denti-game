@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1776260867|100399864';
+const CACHE_VERSION = '1777898412|444153547';
 /** @type {string} */
 const CACHE_PREFIX = 'DENTI - a song +-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
